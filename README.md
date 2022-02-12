@@ -11,4 +11,5 @@ In the context of our project, "traditional" statistics refers to a basic counti
 - Scikit-learn - For implementing ML + metrics
 - Matplotlib - Producing graphs
 - Seaborn - Producing graphs
-- Pandas - To store and wrangle data  
+- Pandas - To store and wrangle data
+- Requests - To send requests to Basketball Reference in order to web scrape 
