@@ -1,25 +1,14 @@
-# CSE-163-Final-Project-
-There are quite a few libraries need to properly execute our project:
-pandas
-beautiful soup (bs4)
-Scikit-Learn
-requests
-math
-seaborn and matplotlib
-eli5
+# CSE-163-Final-Project
 
-How to run:
-Our program is pretty simple, the only python module that actually contains a main
-method is ml_analysis.py (Unless you count the test module, in which case there is two)
+For our final project for CSE 163, we decided to predict NBA win percentage's from one regular season to the next using a supervised regression ML model. To do this, we scraped [Basketball Reference](https://www.basketball-reference.com) using BeautifulSoup in order to get our team data from the 2018-2019 and 2019-2020 NBA regular season. Additionally, we wanted to examine whether traditional or advanced statistics is best at predicting the win percentage of a team.
 
-Running the ml_analysis.py module will use functions from the data_prep.py module to scrap
-the data, and will all perform all of the model training, predicting, testing, and interpreting
-(Result graphs are stored in graphs folder)
+In the context of our project, "traditional" statistics refers to a basic counting stats such as a team's PTS/REB/AST per game, while "advanced" statistics refers to more complex measures such as offensive/defensive rating, assist percentage, pace, etc.
 
-Data:
-The vast majority of our data isn't explicitly stored becase we scrape it off of basketball-reference,
-however in our data folder there is some that is stored: This was the data we
-used as our training and test labels for the machine learning part of the project
-That data can therefore be found in the data folder, or if you want to see if for
-youself it was retrievd from the "Miscallneaous Stats" section of the basketball reference
-web page we linked in our project report
+## Libraries Used
+
+- BeautifulSoup - For web scraping data
+- ELI5 - To interpret variable weights
+- Scikit-learn - For implementing ML + metrics
+- Matplotlib - Producing graphs
+- Seaborn - Producing graphs
+- Pandas - To store and wrangle data  
